@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/elpais.png') }}" class="responsive2"/>
+<h1>{{ titulo }}</h1>
+<h2>{{ subtitulo }}</h2>
+<img src="{{ img_url }}" alt="imagen" class="responsive">
+<p>
+    {% for i in textos %}
+
+    <p>{{ i }}</p>
+{%endfor%}
+</p>
+<hr style="margin-left:250px; margin-right:250px">
+<p>{{ autor }}</p>
+</body>
+</html>
